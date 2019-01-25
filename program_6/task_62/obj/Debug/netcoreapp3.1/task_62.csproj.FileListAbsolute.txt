@@ -1,0 +1,66 @@
+C:\Users\LudmilaRomanenkova\source\repos\task_62\task_62\bin\Debug\netcoreapp3.1\task_62.exe
+C:\Users\LudmilaRomanenkova\source\repos\task_62\task_62\obj\Debug\netcoreapp3.1\task_62.csprojAssemblyReference.cache
+C:\Users\LudmilaRomanenkova\source\repos\task_62\task_62\obj\Debug\netcoreapp3.1\task_62.AssemblyInfoInputs.cache
+C:\Users\LudmilaRomanenkova\source\repos\task_62\task_62\obj\Debug\netcoreapp3.1\task_62.AssemblyInfo.cs
+C:\Users\LudmilaRomanenkova\source\repos\task_62\task_62\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\LudmilaRomanenkova\source\repos\task_62\task_62\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+C:\Users\LudmilaRomanenkova\source\repos\task_62\task_62\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+C:\Users\LudmilaRomanenkova\source\repos\task_62\task_62\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\LudmilaRomanenkova\source\repos\task_62\task_62\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\LudmilaRomanenkova\source\repos\task_62\task_62\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\LudmilaRomanenkova\source\repos\task_62\task_62\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\LudmilaRomanenkova\source\repos\task_62\task_62\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+C:\Users\LudmilaRomanenkova\source\repos\task_62\task_62\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\LudmilaRomanenkova\source\repos\task_62\task_62\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\LudmilaRomanenkova\source\repos\task_62\task_62\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\LudmilaRomanenkova\source\repos\task_62\task_62\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\LudmilaRomanenkova\source\repos\task_62\task_62\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+C:\Users\LudmilaRomanenkova\source\repos\task_62\task_62\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\LudmilaRomanenkova\source\repos\task_62\task_62\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+C:\Users\LudmilaRomanenkova\source\repos\task_62\task_62\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\LudmilaRomanenkova\source\repos\task_62\task_62\bin\Debug\netcoreapp3.1\Npgsql.dll
+C:\Users\LudmilaRomanenkova\source\repos\task_62\task_62\bin\Debug\netcoreapp3.1\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\LudmilaRomanenkova\source\repos\task_62\task_62\obj\Debug\netcoreapp3.1\task_62.csproj.CopyComplete
+C:\Users\LudmilaRomanenkova\source\repos\task_62\task_62\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.Design.dll
+C:\Users\LudmilaRomanenkova\source\repos\task_62\task_62\bin\Debug\netcoreapp3.1\Npgsql.EntityFrameworkCore.PostgreSQL.Design.dll
+C:\Users\LudmilaRomanenkova\source\repos\task_62\task_62\bin\Debug\netcoreapp3.1\task_62.deps.json
+C:\Users\LudmilaRomanenkova\source\repos\task_62\task_62\bin\Debug\netcoreapp3.1\task_62.runtimeconfig.json
+C:\Users\LudmilaRomanenkova\source\repos\task_62\task_62\bin\Debug\netcoreapp3.1\task_62.runtimeconfig.dev.json
+C:\Users\LudmilaRomanenkova\source\repos\task_62\task_62\bin\Debug\netcoreapp3.1\task_62.dll
+C:\Users\LudmilaRomanenkova\source\repos\task_62\task_62\bin\Debug\netcoreapp3.1\task_62.pdb
+C:\Users\LudmilaRomanenkova\source\repos\task_62\task_62\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\LudmilaRomanenkova\source\repos\task_62\task_62\obj\Debug\netcoreapp3.1\task_62.dll
+C:\Users\LudmilaRomanenkova\source\repos\task_62\task_62\obj\Debug\netcoreapp3.1\task_62.pdb
+D:\Program Files(VS)\Web Programs\deadline_\task_6\task_62\bin\Debug\netcoreapp3.1\task_62.exe
+D:\Program Files(VS)\Web Programs\deadline_\task_6\task_62\bin\Debug\netcoreapp3.1\task_62.deps.json
+D:\Program Files(VS)\Web Programs\deadline_\task_6\task_62\bin\Debug\netcoreapp3.1\task_62.runtimeconfig.json
+D:\Program Files(VS)\Web Programs\deadline_\task_6\task_62\bin\Debug\netcoreapp3.1\task_62.runtimeconfig.dev.json
+D:\Program Files(VS)\Web Programs\deadline_\task_6\task_62\bin\Debug\netcoreapp3.1\task_62.dll
+D:\Program Files(VS)\Web Programs\deadline_\task_6\task_62\bin\Debug\netcoreapp3.1\task_62.pdb
+D:\Program Files(VS)\Web Programs\deadline_\task_6\task_62\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Program Files(VS)\Web Programs\deadline_\task_6\task_62\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+D:\Program Files(VS)\Web Programs\deadline_\task_6\task_62\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+D:\Program Files(VS)\Web Programs\deadline_\task_6\task_62\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Program Files(VS)\Web Programs\deadline_\task_6\task_62\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+D:\Program Files(VS)\Web Programs\deadline_\task_6\task_62\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Program Files(VS)\Web Programs\deadline_\task_6\task_62\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.Design.dll
+D:\Program Files(VS)\Web Programs\deadline_\task_6\task_62\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+D:\Program Files(VS)\Web Programs\deadline_\task_6\task_62\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+D:\Program Files(VS)\Web Programs\deadline_\task_6\task_62\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+D:\Program Files(VS)\Web Programs\deadline_\task_6\task_62\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\Program Files(VS)\Web Programs\deadline_\task_6\task_62\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+D:\Program Files(VS)\Web Programs\deadline_\task_6\task_62\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+D:\Program Files(VS)\Web Programs\deadline_\task_6\task_62\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Program Files(VS)\Web Programs\deadline_\task_6\task_62\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+D:\Program Files(VS)\Web Programs\deadline_\task_6\task_62\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Program Files(VS)\Web Programs\deadline_\task_6\task_62\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+D:\Program Files(VS)\Web Programs\deadline_\task_6\task_62\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+D:\Program Files(VS)\Web Programs\deadline_\task_6\task_62\bin\Debug\netcoreapp3.1\Npgsql.dll
+D:\Program Files(VS)\Web Programs\deadline_\task_6\task_62\bin\Debug\netcoreapp3.1\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+D:\Program Files(VS)\Web Programs\deadline_\task_6\task_62\bin\Debug\netcoreapp3.1\Npgsql.EntityFrameworkCore.PostgreSQL.Design.dll
+D:\Program Files(VS)\Web Programs\deadline_\task_6\task_62\obj\Debug\netcoreapp3.1\task_62.csprojAssemblyReference.cache
+D:\Program Files(VS)\Web Programs\deadline_\task_6\task_62\obj\Debug\netcoreapp3.1\task_62.AssemblyInfoInputs.cache
+D:\Program Files(VS)\Web Programs\deadline_\task_6\task_62\obj\Debug\netcoreapp3.1\task_62.AssemblyInfo.cs
+D:\Program Files(VS)\Web Programs\deadline_\task_6\task_62\obj\Debug\netcoreapp3.1\task_62.csproj.CopyComplete
+D:\Program Files(VS)\Web Programs\deadline_\task_6\task_62\obj\Debug\netcoreapp3.1\task_62.dll
+D:\Program Files(VS)\Web Programs\deadline_\task_6\task_62\obj\Debug\netcoreapp3.1\task_62.pdb

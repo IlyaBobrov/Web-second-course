@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Program Files(VS)\\Web Programs\\Program_5\\Program_5.csproj": {}
+    "D:\\Program Files(Git Kraken)\\Web-second-course\\Program_5\\Program_5.csproj": {}
   },
   "projects": {
-    "D:\\Program Files(VS)\\Web Programs\\Program_5\\Program_5.csproj": {
+    "D:\\Program Files(Git Kraken)\\Web-second-course\\Program_5\\Program_5.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Program Files(VS)\\Web Programs\\Program_5\\Program_5.csproj",
+        "projectUniqueName": "D:\\Program Files(Git Kraken)\\Web-second-course\\Program_5\\Program_5.csproj",
         "projectName": "Program_5",
-        "projectPath": "D:\\Program Files(VS)\\Web Programs\\Program_5\\Program_5.csproj",
+        "projectPath": "D:\\Program Files(Git Kraken)\\Web-second-course\\Program_5\\Program_5.csproj",
         "packagesPath": "C:\\Users\\илья\\.nuget\\packages\\",
-        "outputPath": "D:\\Program Files(VS)\\Web Programs\\Program_5\\obj\\",
+        "outputPath": "D:\\Program Files(Git Kraken)\\Web-second-course\\Program_5\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Microsoft\\Xamarin\\NuGet\\",
@@ -48,6 +48,10 @@
               "version": "[6.4.0, )"
             },
             "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[3.1.1, )"
             },
