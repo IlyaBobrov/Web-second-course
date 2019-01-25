@@ -1,0 +1,29 @@
+﻿@{
+	ViewData["Title"] = "Explicit loading";
+}
+
+<h3>Explicit loading</h3>
+<h3>Cars</h3>
+<table class="table-condensed" cellpadding="15" cellspacing="15">
+	<tr>
+		<td>Car</td>
+		<td>Brand</td>
+		<td>Country</td>
+		<td>Power</td>
+		<td>Price</td>
+		<td>Count</td>
+
+	</tr>
+
+	@foreach (var car in Model)
+	{
+		<tr>
+			<td>@car.Name</td>
+			<td>@car.Brand.Name</td>
+			<td>@car.Brand.Country</td>
+			<td>@car.Power</td>
+			<td>@car.Price</td>
+			<td>@car.Count</td>
+		</tr>
+	}
+</table>
