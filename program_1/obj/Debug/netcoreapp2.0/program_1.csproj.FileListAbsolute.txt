@@ -1,0 +1,11 @@
+D:\Program Files(VS)\Web Programs\program_1\program_1\bin\Debug\netcoreapp2.0\program_1.deps.json
+D:\Program Files(VS)\Web Programs\program_1\program_1\bin\Debug\netcoreapp2.0\program_1.runtimeconfig.json
+D:\Program Files(VS)\Web Programs\program_1\program_1\bin\Debug\netcoreapp2.0\program_1.runtimeconfig.dev.json
+D:\Program Files(VS)\Web Programs\program_1\program_1\bin\Debug\netcoreapp2.0\program_1.dll
+D:\Program Files(VS)\Web Programs\program_1\program_1\bin\Debug\netcoreapp2.0\program_1.pdb
+D:\Program Files(VS)\Web Programs\program_1\program_1\obj\Debug\netcoreapp2.0\program_1.csprojAssemblyReference.cache
+D:\Program Files(VS)\Web Programs\program_1\program_1\obj\Debug\netcoreapp2.0\program_1.csproj.CoreCompileInputs.cache
+D:\Program Files(VS)\Web Programs\program_1\program_1\obj\Debug\netcoreapp2.0\program_1.AssemblyInfoInputs.cache
+D:\Program Files(VS)\Web Programs\program_1\program_1\obj\Debug\netcoreapp2.0\program_1.AssemblyInfo.cs
+D:\Program Files(VS)\Web Programs\program_1\program_1\obj\Debug\netcoreapp2.0\program_1.dll
+D:\Program Files(VS)\Web Programs\program_1\program_1\obj\Debug\netcoreapp2.0\program_1.pdb
