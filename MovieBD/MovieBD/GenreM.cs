@@ -23,13 +23,13 @@ namespace MovieBD
                 var first = Genres.FirstOrDefault(p => p.Name == name);
                 if (first == null)
                 {
-                    Console.WriteLine("!!! id is null");
+                    Console.WriteLine("! id is null");
                     return -1;
                 }
                 else
                 {
                     id = first.Id;
-                    Console.WriteLine("!!! " + name + " already exists... Id: " + id);
+                    Console.WriteLine("! " + name + " already exists... Id: " + id);
                     return id;
                 }
 
@@ -39,7 +39,7 @@ namespace MovieBD
 
             id = Genres.Count;
             Genres.Add(new Genre(id, name));
-            Console.WriteLine("OK| id: " + id + "\t | " + name + " " + " added***");
+            Console.WriteLine("ADD| id: " + id + " - " + name );
             return id;
         }
         public Genre GetName(string name) => Genres.FirstOrDefault(p => p.Name == name);
@@ -51,9 +51,9 @@ namespace MovieBD
             Console.WriteLine("\nGenres:");
             foreach (var p in idGenres)
             {
-                Console.WriteLine("id: " + p + "\t | " + GetId(p).Name);
+                Console.WriteLine("id: " + p + " - " + GetId(p).Name);
             }
-            Console.WriteLine("----");
+            Console.WriteLine("--OK--");
         }
     }
 }

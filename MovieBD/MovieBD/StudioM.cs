@@ -35,7 +35,7 @@ namespace MovieBD
 
             id = Studios.Count;
             Studios.Add(new Genre(id, name));
-            Console.WriteLine("OK| id: " + id + "\t | " + name + " " + " added***");
+            Console.WriteLine("ADD| id: " + id + " - " + name);
             return id;
         }
         public Genre GetName(string name) => Studios.FirstOrDefault(p => p.Name == name);
@@ -45,9 +45,9 @@ namespace MovieBD
             Console.WriteLine("\nStudios:");
             foreach (var p in idStudios)
             {
-                Console.WriteLine("id: " + p + "\t | " + GetId(p).Name);
+                Console.WriteLine("id: " + p + " - " + GetId(p).Name);
             }
-            Console.WriteLine("----");
+            Console.WriteLine("--OK--");
         }
     }
 }

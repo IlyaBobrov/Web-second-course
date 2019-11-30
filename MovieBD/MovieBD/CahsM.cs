@@ -40,37 +40,39 @@ namespace MovieBD
         {
             if (!_prices.ContainsKey(name)) return false;
 
-            if (sale <= 0 || sale > 100)
+            if (sale < 0 ||  100 < sale)
             {
-                Console.WriteLine("The sale is too big!");
+                Console.WriteLine("! incorrect price");
                 return false;
             }
-
             _prices[name] -= _prices[name] % sale;
             return true;
         }
-
+        
+        
         public int GetQuantity(string name)
         {
             return _storageManager.GetQuantity(name);
         }
-
+        
+        
         public int GetPrice(string name)
         {
             return _prices.ContainsKey(name) ? _prices[name] : 0;
         }
-
+        
+        
         public int Sell(string name, int quantity, int money)
         {
             if (GetQuantity(name) < quantity)
             {
-                Console.WriteLine("Not enough " + name + "(s) in storage");
+                Console.WriteLine("! quantity move " + name + " in storage  is not enough");
                 return money;
             }
 
             if (!_prices.ContainsKey(name))
             {
-                Console.WriteLine(name + " does not have a price yet");
+                Console.WriteLine("! movie " + name + " doesn't have price");
                 return money;
             }
 
@@ -78,7 +80,7 @@ namespace MovieBD
 
             if (cost > money)
             {
-                Console.WriteLine("Not enough money to buy " + quantity + " " + name + "(s)");
+                Console.WriteLine("! not enough money (" + quantity + " " + name + ")" );
                 return money;
             }
 

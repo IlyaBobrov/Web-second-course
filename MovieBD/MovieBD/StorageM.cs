@@ -24,26 +24,25 @@ namespace MovieBD
             }
 
             Storage.Add(name, quantity);
-            Console.WriteLine(name + " added to storage. Current quantity is " + Storage[name]);
+            Console.WriteLine("ADD to storage| "+ name + " quantity " + Storage[name]);
             return true;
         }
 
         public bool Remove(string name, int quantity)
         {
-            if (!Storage.ContainsKey(name)) return false;
+            if (!Storage.ContainsKey(name)) 
+                return false;
 
             if (Storage[name] < quantity)
                 return false;
 
             if (Storage[name] == quantity)
-            {
                 Storage.Remove(name);
-                Console.WriteLine(name + " removed from storage. Current quantity is " + Storage[name]);
-                return true;
-            }
-
-            Storage[name] -= quantity;
-            Console.WriteLine(name + " removed from storage. Current quantity is " + Storage[name]);
+            else
+                Storage[name] -= quantity;
+            
+            
+            Console.WriteLine("REMOVED from storage| " + name + " quantity: " + Storage[name]);
             return true;
         }
 
@@ -52,7 +51,8 @@ namespace MovieBD
         
         public int GetQuantity(string name)
         {
-            if (!Storage.ContainsKey(name)) return -1;
+            if (!Storage.ContainsKey(name)) 
+                return -1;
 
             return Storage[name];
         }

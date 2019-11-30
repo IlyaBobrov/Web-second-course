@@ -72,7 +72,7 @@ namespace MovieBD
                                 "\t | id Studio: " + GetName(p).IdStudio +
                                 "\t | id Genre: " + GetName(p).IdGenre);
             }
-            Console.WriteLine("----");
+            Console.WriteLine("--OK--");
         }
 
         public void ShowDirectors(int id, HashSet<string> mov)
@@ -82,7 +82,7 @@ namespace MovieBD
             {
                 Console.WriteLine(p);
             }
-            Console.WriteLine("----");
+            Console.WriteLine("--OK--");
         }
 
         public void ShowStudios(int id, HashSet<string> mov)
@@ -92,7 +92,7 @@ namespace MovieBD
             {
                 Console.WriteLine(p);
             }
-            Console.WriteLine("----");
+            Console.WriteLine("--OK--");
         }
 
         public void ShowGenres(int id, HashSet<string> mov)
@@ -102,7 +102,7 @@ namespace MovieBD
             {
                 Console.WriteLine(p);
             }
-            Console.WriteLine("----");
+            Console.WriteLine("--OK--");
         }
     }
 }

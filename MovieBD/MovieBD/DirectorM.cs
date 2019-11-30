@@ -30,20 +30,20 @@ namespace MovieBD
                 var first = Directors.FirstOrDefault(p => p.Name == name);
                 if (first == null)
                 {
-                    Console.WriteLine("!!! id is null");
+                    Console.WriteLine("! id is null");
                     return -1;
                 }
                 else
                 {
                     id = first.Id;
-                    Console.WriteLine("!!! " + name + " already exists... Id: " + id);
+                    Console.WriteLine("! " + name + " already exists... Id: " + id);
                     return id;
                 }
             }
             id = Directors.Count;
             Directors.Add(new Director(id, name));
 
-            Console.WriteLine("OK| id: " + id +"\t | " + name  + " added***");
+            Console.WriteLine("ADD| id: " + id +" - " + name );
             return id;
         }
         public Director GetId(int id) => Directors.FirstOrDefault(p => p.Id == id);
@@ -53,9 +53,9 @@ namespace MovieBD
             Console.WriteLine("\nDirectors:");
             foreach (var p in idDirectors)
             {
-                Console.WriteLine("id: " + p + "\t | " + GetId(p).Name );
+                Console.WriteLine("id: " + p + " - " + GetId(p).Name );
             }
-            Console.WriteLine("----");
+            Console.WriteLine("--OK--");
         }
     }
 }

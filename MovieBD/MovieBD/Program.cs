@@ -7,48 +7,55 @@ namespace MovieBD
             StorageManager storageManager, MovieManager movieManager, CashManager cashManager)
         {
             // add studio
-            int pixarId = studioManager.Add("Pixar");
-            int disneyId = studioManager.Add("Disney");
-            int marvelId = studioManager.Add("MARVEL");
-            int universalId = studioManager.Add("Universal");
-            int columbiaId = studioManager.Add("Columbia");
-            int dreamWorksId = studioManager.Add("DreamWorks");
+            var pixarId = studioManager.Add("Pixar");
+            var disneyId = studioManager.Add("Disney");
+            var marvelId = studioManager.Add("MARVEL");
+            var universalId = studioManager.Add("Universal");
+            var columbiaId = studioManager.Add("Columbia");
+            var dreamWorksId = studioManager.Add("DreamWorks");
 
             // add genre
-            int comedyId = genreManager.Add("comedy");
-            int cartonId = genreManager.Add("carton");
-            int dramaId = genreManager.Add("drama");
-            int horrorsId = genreManager.Add("horrors");
-            int actionId = genreManager.Add("action");
-            int fantasyId = genreManager.Add("fantasy");
+            var comedyId = genreManager.Add("comedy");
+            var cartonId = genreManager.Add("carton");
+            var dramaId = genreManager.Add("drama");
+            var horrorsId = genreManager.Add("horrors");
+            var actionId = genreManager.Add("action");
+            var fantasyId = genreManager.Add("fantasy");
 
             // add directors
-            int popovId = directorManager.Add("PopovAA");
-            int zverevlId = directorManager.Add("ZverevAB");
-            int retrovId = directorManager.Add("PetrovVG");
-            int bobrovId = directorManager.Add("BobrovII");
-            int pechkinId = directorManager.Add("PechkinDR");
-            int andreevId = directorManager.Add("AndreevEI");
+            var popovId = directorManager.Add("PopovAA");
+            var zverevlId = directorManager.Add("ZverevAB");
+            var retrovId = directorManager.Add("PetrovVG");
+            var bobrovId = directorManager.Add("BobrovII");
+            var pechkinId = directorManager.Add("PechkinDR");
+            var andreevId = directorManager.Add("AndreevEI");
 
             movieManager.Add("Cars", popovId, pixarId, fantasyId);
             movieManager.Add("Hero", bobrovId, universalId, actionId);
             movieManager.Add("ForDead", zverevlId, columbiaId, horrorsId);
+            movieManager.Add("ForDead 2", zverevlId, columbiaId, horrorsId);
+            movieManager.Add("Cars 2", popovId, pixarId, fantasyId);
 
             storageManager.Add("Cars", 50);
             storageManager.Add("Hero", 150);
             storageManager.Add("ForDead", 200);
+            storageManager.Add("ForDead 2", 100);
+            storageManager.Add("Cars 2", 250);
 
             cashManager.ChangePrice("Cars", 350);
             cashManager.ChangePrice("Hero", 250);
             cashManager.ChangePrice("ForDead", 400);
+            cashManager.ChangePrice("ForDead 2", 200);
+            cashManager.ChangePrice("Cars 2", 400);
+
         }
         //----------------------------------------------------------
         public static void Run(StorageManager storageManager)
         {
-            Console.WriteLine("\nThe following films are in storage:\n");
+            Console.WriteLine("\nThe following films are in storage:");
             foreach(var i in storageManager.Storage)
             {
-                Console.WriteLine(i.Key + " - " + i.Value + "p");
+                Console.WriteLine(i.Key + " - " + i.Value);
             }
             Console.WriteLine();
         }
@@ -72,7 +79,7 @@ namespace MovieBD
                 Console.WriteLine("Select an action:" +
                                   "\n1) storage" +
                                   "\n2) cash" +
-                                  "\n3) client" +
+                                  "\n3) show info" +
                                   "\n4) data base edit" +
                                   "\n5) finish\n");
                 var val = Console.ReadLine();
@@ -162,7 +169,7 @@ namespace MovieBD
                     {
                         Console.WriteLine("\nSelect option:" +
                                           "\n1) edit movie price" +
-                                          "\n2) sell movie" +
+                                          "\n2) add sell " +
                                           "\n3) come back\n");
                         var opt = Console.ReadLine();
                         switch (opt)
@@ -242,9 +249,9 @@ namespace MovieBD
                                           "\n2 - show all directors" +
                                           "\n3 - show all studios" +
                                           "\n4 - show all genre" +
-                                          "\n5 - show all toys of a certain directors" +
-                                          "\n6 - show all toys of a certain studio" +
-                                          "\n7 - show all toys of a certain genre" +
+                                          "\n5 - show all movies of a certain directors" +
+                                          "\n6 - show all movies of a certain studio" +
+                                          "\n7 - show all movies of a certain genre" +
                                           "\n8 - buy a movie" +
                                           "\n9 - come back");
                         var opt = Console.ReadLine();
