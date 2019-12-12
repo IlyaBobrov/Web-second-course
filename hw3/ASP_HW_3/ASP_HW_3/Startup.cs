@@ -9,29 +9,46 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.AspNetCore.Http;
-
-
+//using static ASP_HW_3.wwwroot.Setvices.IMessageSender;
 
 namespace ASP_HW_3
 {
     public class Startup
     {
+        /*
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
         }
 
         public IConfiguration Configuration { get; }
+        */
 
-        // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
+            //services.AddTransient<IMessageSender, EmailMessageSender>();
         }
+        
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+        /*public void Configure(IApplicationBuilder app, IMessageSender sender)
+        {
+           /* app.Run(async (context) =>
+            {
+               // IMessageSender sender = context.RequestServices.GetService<IMessageServices, e>();
+
+                await context.Response.WriteAsync(sender.Send());
+            });
+        }
+        */
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+
+            DefaultFilesOptions opt = new DefaultFilesOptions();
+            opt.DefaultFileNames.Clear();
+            opt.DefaultFileNames.Add("default.html");
+            app.UseDefaultFiles(opt);
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -42,48 +59,27 @@ namespace ASP_HW_3
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
-
-            
-            ///Task 1,2
-            /*
-           
-            */
-
             //app.UseHttpsRedirection();
             //app.UseStaticFiles();
 
+            app.UseStaticFiles();
             
-            app.Map("/index", Index);
-            app.Map("/about", About);
-            app.Map("/tor", FuncTor);
-            app.Map("/cube", FuncCube);
-
+            app.UseMiddleware<ErrorHandlingMiddleware>();
+            app.UseMiddleware<CheckTokenMiddleware>();
+            app.UseMiddleware<AuthenticationMiddleware>();
+            app.UseMiddleware<RoutingMiddleware>();
+            
+            ///Task 1,2,
+            app.Map("/main/tor", FuncTor);
+            app.Map("/main/cube", FuncCube);
 
             app.Run(async (context) =>
             {
                 await context.Response.WriteAsync(
-                    "Page Not Found\n" +
                     "You can go:\n" +
-                    "/index\n" +
-                    "/about\n" +
-                    "/tor\n" +
-                    "/cube");
+                    "/main/tor\n" +
+                    "/main/cube");
              });
-        }
-
-        private static void Index(IApplicationBuilder app)
-        {
-            app.Run(async context =>
-            {
-                await context.Response.WriteAsync("Index");
-            });
-        }
-        private static void About(IApplicationBuilder app)
-        {
-            app.Run(async context =>
-            {
-                await context.Response.WriteAsync("About");
-            });
         }
 
         private static void FuncTor(IApplicationBuilder app)
@@ -103,8 +99,6 @@ namespace ASP_HW_3
 
             app.Run(async (context) =>
             {
-                await context.Response.WriteAsync("Hello World!\n\n");
-
                 V = 2 * Math.Pow(Math.PI, 2) * R * Math.Pow(rm, 2);
                 S = 4 * Math.Pow(Math.PI, 2) * R * rm;
                 await Task.FromResult(0);
@@ -119,27 +113,7 @@ namespace ASP_HW_3
                 await context.Response.WriteAsync($"Cube volume: {Math.Pow(a, 3)}\n");
                 await context.Response.WriteAsync($"Cube area: {6 * a}\n");
             });
-            
         }
-
-        /*
-        ///Task 1
-        app.UseRouting();
-        app.UseEndpoints(endpoints =>
-        {
-            endpoints.MapGet("/", async context =>
-            {
-                await context.Response.WriteAsync("Hello World!\n");
-            });
-        });
-
-        //app.UseAuthorization();
-
-        app.UseEndpoints(endpoints =>
-        {
-            endpoints.MapRazorPages();
-        });
-        */
-
+    
     }
 }

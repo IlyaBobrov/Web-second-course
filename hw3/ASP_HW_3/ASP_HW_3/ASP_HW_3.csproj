@@ -4,6 +4,17 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Content Include="..\..\..\..\..\Program Files%2528Git Kraken%2529\Web-second-course\hw3\ASP_HW_3\ASP_HW_3\Setvices\IMessageSender.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.2.8" />
+    <PackageReference Include="Microsoft.AspNetCore.App" Version="2.2.8" />
+    <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="2.2.0" />
+    <PackageReference Include="Microsoft.NET.Sdk.Razor" Version="3.1.0" />
+  </ItemGroup>
+
 
 
 </Project>
