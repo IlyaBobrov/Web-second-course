@@ -15,32 +15,29 @@ namespace ASP_HW_3
 {
     public class Startup
     {
-        /*
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
         }
-
         public IConfiguration Configuration { get; }
-        */
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddRazorPages();
-            //services.AddTransient<IMessageSender, EmailMessageSender>();
+            //services.AddRazorPages();
+            services.AddTransient<IMessageSender, EmailMessageSender>();
         }
-        
 
-        /*public void Configure(IApplicationBuilder app, IMessageSender sender)
+
+        public void Configure(IApplicationBuilder app, IMessageSender sender)
         {
-           /* app.Run(async (context) =>
+            app.Run(async (context) =>
             {
-               // IMessageSender sender = context.RequestServices.GetService<IMessageServices, e>();
-
+                IMessageSender sender = context.RequestServices.GetService<IMessageServices>();
                 await context.Response.WriteAsync(sender.Send());
             });
         }
-        */
+        
+        /*
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
 
@@ -63,12 +60,12 @@ namespace ASP_HW_3
             //app.UseStaticFiles();
 
             app.UseStaticFiles();
-            
+
             app.UseMiddleware<ErrorHandlingMiddleware>();
             app.UseMiddleware<CheckTokenMiddleware>();
             app.UseMiddleware<AuthenticationMiddleware>();
             app.UseMiddleware<RoutingMiddleware>();
-            
+
             ///Task 1,2,
             app.Map("/main/tor", FuncTor);
             app.Map("/main/cube", FuncCube);
@@ -79,7 +76,7 @@ namespace ASP_HW_3
                     "You can go:\n" +
                     "/main/tor\n" +
                     "/main/cube");
-             });
+            });
         }
 
         private static void FuncTor(IApplicationBuilder app)
@@ -114,6 +111,6 @@ namespace ASP_HW_3
                 await context.Response.WriteAsync($"Cube area: {6 * a}\n");
             });
         }
-    
+        */
     }
 }

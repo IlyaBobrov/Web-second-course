@@ -9,9 +9,15 @@ D:\Program Files(Git Kraken)\Web-second-course\hw3\ASP_HW_3\ASP_HW_3\bin\Debug\n
 D:\Program Files(Git Kraken)\Web-second-course\hw3\ASP_HW_3\ASP_HW_3\bin\Debug\netcoreapp3.1\ASP_HW_3.pdb
 D:\Program Files(Git Kraken)\Web-second-course\hw3\ASP_HW_3\ASP_HW_3\bin\Debug\netcoreapp3.1\ASP_HW_3.Views.dll
 D:\Program Files(Git Kraken)\Web-second-course\hw3\ASP_HW_3\ASP_HW_3\bin\Debug\netcoreapp3.1\ASP_HW_3.Views.pdb
+D:\Program Files(Git Kraken)\Web-second-course\hw3\ASP_HW_3\ASP_HW_3\bin\Debug\netcoreapp3.1\System.Net.Http.Formatting.dll
+D:\Program Files(Git Kraken)\Web-second-course\hw3\ASP_HW_3\ASP_HW_3\bin\Debug\netcoreapp3.1\System.Web.Http.dll
+D:\Program Files(Git Kraken)\Web-second-course\hw3\ASP_HW_3\ASP_HW_3\bin\Debug\netcoreapp3.1\System.Web.Http.WebHost.dll
+D:\Program Files(Git Kraken)\Web-second-course\hw3\ASP_HW_3\ASP_HW_3\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+D:\Program Files(Git Kraken)\Web-second-course\hw3\ASP_HW_3\ASP_HW_3\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
 D:\Program Files(Git Kraken)\Web-second-course\hw3\ASP_HW_3\ASP_HW_3\obj\Debug\netcoreapp3.1\ASP_HW_3.csprojAssemblyReference.cache
 D:\Program Files(Git Kraken)\Web-second-course\hw3\ASP_HW_3\ASP_HW_3\obj\Debug\netcoreapp3.1\staticwebassets\ASP_HW_3.StaticWebAssets.Manifest.cache
 D:\Program Files(Git Kraken)\Web-second-course\hw3\ASP_HW_3\ASP_HW_3\obj\Debug\netcoreapp3.1\staticwebassets\ASP_HW_3.StaticWebAssets.xml
+D:\Program Files(Git Kraken)\Web-second-course\hw3\ASP_HW_3\ASP_HW_3\obj\Debug\netcoreapp3.1\ASP_HW_3.MvcApplicationPartsAssemblyInfo.cache
 D:\Program Files(Git Kraken)\Web-second-course\hw3\ASP_HW_3\ASP_HW_3\obj\Debug\netcoreapp3.1\ASP_HW_3.RazorAssemblyInfo.cache
 D:\Program Files(Git Kraken)\Web-second-course\hw3\ASP_HW_3\ASP_HW_3\obj\Debug\netcoreapp3.1\ASP_HW_3.RazorAssemblyInfo.cs
 D:\Program Files(Git Kraken)\Web-second-course\hw3\ASP_HW_3\ASP_HW_3\obj\Debug\netcoreapp3.1\ASP_HW_3.AssemblyInfoInputs.cache
@@ -29,7 +35,6 @@ D:\Program Files(Git Kraken)\Web-second-course\hw3\ASP_HW_3\ASP_HW_3\obj\Debug\n
 D:\Program Files(Git Kraken)\Web-second-course\hw3\ASP_HW_3\ASP_HW_3\obj\Debug\netcoreapp3.1\ASP_HW_3.RazorTargetAssemblyInfo.cache
 D:\Program Files(Git Kraken)\Web-second-course\hw3\ASP_HW_3\ASP_HW_3\obj\Debug\netcoreapp3.1\ASP_HW_3.RazorTargetAssemblyInfo.cs
 D:\Program Files(Git Kraken)\Web-second-course\hw3\ASP_HW_3\ASP_HW_3\obj\Debug\netcoreapp3.1\ASP_HW_3.Views.pdb
+D:\Program Files(Git Kraken)\Web-second-course\hw3\ASP_HW_3\ASP_HW_3\obj\Debug\netcoreapp3.1\ASP_HW_3.csproj.CopyComplete
 D:\Program Files(Git Kraken)\Web-second-course\hw3\ASP_HW_3\ASP_HW_3\obj\Debug\netcoreapp3.1\ASP_HW_3.dll
 D:\Program Files(Git Kraken)\Web-second-course\hw3\ASP_HW_3\ASP_HW_3\obj\Debug\netcoreapp3.1\ASP_HW_3.pdb
-D:\Program Files(Git Kraken)\Web-second-course\hw3\ASP_HW_3\ASP_HW_3\obj\Debug\netcoreapp3.1\ASP_HW_3.csproj.CopyComplete
-D:\Program Files(Git Kraken)\Web-second-course\hw3\ASP_HW_3\ASP_HW_3\obj\Debug\netcoreapp3.1\ASP_HW_3.MvcApplicationPartsAssemblyInfo.cache
