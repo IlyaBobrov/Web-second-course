@@ -24,10 +24,10 @@ namespace ASP_HW_3
         public void ConfigureServices(IServiceCollection services)
         {
             //services.AddRazorPages();
-            services.AddTransient<IMessageSender, EmailMessageSender>();
+            //services.AddTransient<IMessageSender, EmailMessageSender>();
         }
 
-
+        /*
         public void Configure(IApplicationBuilder app, IMessageSender sender)
         {
             app.Run(async (context) =>
@@ -36,8 +36,8 @@ namespace ASP_HW_3
                 await context.Response.WriteAsync(sender.Send());
             });
         }
+        */
         
-        /*
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
 
@@ -57,7 +57,6 @@ namespace ASP_HW_3
                 app.UseHsts();
             }
             //app.UseHttpsRedirection();
-            //app.UseStaticFiles();
 
             app.UseStaticFiles();
 
@@ -111,6 +110,6 @@ namespace ASP_HW_3
                 await context.Response.WriteAsync($"Cube area: {6 * a}\n");
             });
         }
-        */
+        
     }
 }
