@@ -1,0 +1,14 @@
+﻿using Microsoft.AspNetCore.Http;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace ASP_HW_3.Services
+{
+    public interface IMessageSender
+    {
+        string Send(HttpContext context);
+    }
+
+}

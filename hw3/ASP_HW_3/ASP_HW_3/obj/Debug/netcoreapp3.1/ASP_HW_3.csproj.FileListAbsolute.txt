@@ -14,7 +14,6 @@ D:\Program Files(Git Kraken)\Web-second-course\hw3\ASP_HW_3\ASP_HW_3\bin\Debug\n
 D:\Program Files(Git Kraken)\Web-second-course\hw3\ASP_HW_3\ASP_HW_3\bin\Debug\netcoreapp3.1\System.Web.Http.WebHost.dll
 D:\Program Files(Git Kraken)\Web-second-course\hw3\ASP_HW_3\ASP_HW_3\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 D:\Program Files(Git Kraken)\Web-second-course\hw3\ASP_HW_3\ASP_HW_3\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
-D:\Program Files(Git Kraken)\Web-second-course\hw3\ASP_HW_3\ASP_HW_3\obj\Debug\netcoreapp3.1\ASP_HW_3.csprojAssemblyReference.cache
 D:\Program Files(Git Kraken)\Web-second-course\hw3\ASP_HW_3\ASP_HW_3\obj\Debug\netcoreapp3.1\staticwebassets\ASP_HW_3.StaticWebAssets.Manifest.cache
 D:\Program Files(Git Kraken)\Web-second-course\hw3\ASP_HW_3\ASP_HW_3\obj\Debug\netcoreapp3.1\staticwebassets\ASP_HW_3.StaticWebAssets.xml
 D:\Program Files(Git Kraken)\Web-second-course\hw3\ASP_HW_3\ASP_HW_3\obj\Debug\netcoreapp3.1\ASP_HW_3.MvcApplicationPartsAssemblyInfo.cache

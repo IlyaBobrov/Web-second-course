@@ -9,7 +9,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.AspNetCore.Http;
-//using static ASP_HW_3.wwwroot.Setvices.IMessageSender;
+
+using ASP_HW_3.Services;
+using IHostingEnvironment = Microsoft.AspNetCore.Hosting.IHostingEnvironment;
 
 namespace ASP_HW_3
 {
@@ -23,28 +25,14 @@ namespace ASP_HW_3
 
         public void ConfigureServices(IServiceCollection services)
         {
-            //services.AddRazorPages();
-            //services.AddTransient<IMessageSender, EmailMessageSender>();
+            services.AddTransient<IMessageSender, SmsMessageSender>();
+            services.AddSession();
+            services.AddDistributedMemoryCache();
+            services.AddTransient<MessageService>();
         }
 
-        /*
-        public void Configure(IApplicationBuilder app, IMessageSender sender)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env,IMessageSender messageSender, MessageService messageService)
         {
-            app.Run(async (context) =>
-            {
-                IMessageSender sender = context.RequestServices.GetService<IMessageServices>();
-                await context.Response.WriteAsync(sender.Send());
-            });
-        }
-        */
-        
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
-        {
-
-            DefaultFilesOptions opt = new DefaultFilesOptions();
-            opt.DefaultFileNames.Clear();
-            opt.DefaultFileNames.Add("default.html");
-            app.UseDefaultFiles(opt);
 
             if (env.IsDevelopment())
             {
@@ -53,10 +41,13 @@ namespace ASP_HW_3
             else
             {
                 app.UseExceptionHandler("/Error");
-                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
-            //app.UseHttpsRedirection();
+            
+            DefaultFilesOptions opt = new DefaultFilesOptions();
+            opt.DefaultFileNames.Clear();
+            opt.DefaultFileNames.Add("default.html");
+            app.UseDefaultFiles(opt);
 
             app.UseStaticFiles();
 
@@ -65,17 +56,31 @@ namespace ASP_HW_3
             app.UseMiddleware<AuthenticationMiddleware>();
             app.UseMiddleware<RoutingMiddleware>();
 
-            ///Task 1,2,
             app.Map("/main/tor", FuncTor);
             app.Map("/main/cube", FuncCube);
+            //app.Map("/main/mes", FuncMes(app, messageSender));
 
+            app.UseSession();
             app.Run(async (context) =>
             {
+                IMessageSender messageSender = context.RequestServices.GetService<IMessageSender>();
+
+                //context.Response.ContentType = "text/html;charset=utf-8";
+                
                 await context.Response.WriteAsync(
                     "You can go:\n" +
                     "/main/tor\n" +
-                    "/main/cube");
+                    "/main/cube\n\n" + messageSender.Send(context));
+                await context.Response.WriteAsync($"{messageSender.Send(context)}");
             });
+        }
+        private static void FuncMes(IApplicationBuilder app, IMessageSender messageSender)
+        {
+            app.Run(async (context) =>
+            {
+                await context.Response.WriteAsync(messageSender.Send(context));
+            });
+
         }
 
         private static void FuncTor(IApplicationBuilder app)
