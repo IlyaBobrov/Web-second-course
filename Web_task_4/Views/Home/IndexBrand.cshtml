@@ -1,0 +1,33 @@
+﻿@model IEnumerable<Web_task_4.Models.Brand>
+@{
+    ViewData["Title"] = "Brands";
+}
+<h3><b>Available brands</b></h3>
+<form asp-controller="Home" asp-action="IndexBrand">
+    <p>
+        <input type="text" name="SearchString">
+        <input type="submit" value="Search" />
+    </p>
+</form>
+<table class="table-condensed" cellpadding="15" cellspacing="15">
+    <tr>
+        <td><h3><b>BRANDS:</b></h3></td>
+    </tr>
+
+    @foreach (var brand in Model)
+    {
+        <tr>
+            <td>@brand.Name</td>
+            <td>|</td>
+            <td><a href="~/Home/showBrand/@brand.Id">Info</a></td>
+            <td>|</td>
+            <td><a href="~/Home/editBrand/@brand.Id">Edit</a></td>
+            <td>|</td>
+            <td><a href="~/Home/destroyBrand/@brand.Id">Delete</a></td>
+        </tr>
+    }
+</table>
+
+<button>
+    <a href="~/Home/createBrand">Add new Brand</a>
+</button>

@@ -1,0 +1,46 @@
+﻿@{
+    ViewData["Title"] = "New car";
+}
+
+<form method="post" class="form-horizontal" role="form">
+    @* <input type="hidden" value="@ViewBag.CarId" name="CarId" /> *@
+    <p><b>Enter the data in the fields to create a car:</b></p>
+    <div class="form-group">
+        <label for="Name" class="col-md-2 control-label">Name:</label>
+        <div class="col-md-4">
+            <input type="text" name="Name" class="form-control" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="Brand" class="col-md-2 control-label">Brand:</label>
+        <div class="col-md-4">
+            <input type="text" name="Brand" class="form-control" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="Price" class="col-md-2 control-label">Price:</label>
+        <div class="col-md-4">
+            <input type="text" name="Price" class="form-control" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="EnginePower" class="col-md-2 control-label">Engine power:</label>
+        <div class="col-md-4">
+            <input type="text" name="EnginePower" class="form-control" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="Number" class="col-md-2 control-label">Number:</label>
+        <div class="col-md-4">
+            <input type="text" name="Number" class="form-control" />
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <span class="col-md-offset-2 col-md-10">
+                <button type="submit" value="Submit" name="Add">Create</button>
+                <button type="submit" value="Cancel" name="Cancel">Cancel</button>
+            </span>
+        </div>
+    </div>
+</form>

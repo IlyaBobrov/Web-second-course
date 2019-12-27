@@ -1,0 +1,18 @@
+﻿@model IEnumerable<Web_task_4.Models.Brand>
+@{
+    ViewData["Title"] = "About Brand";
+}
+<h3><b>Information</b></h3>
+<table class="table-condensed" cellpadding="15" cellspacing="15">
+    <tr>
+        <td>Brand</td>
+        <td>Country</td>
+    </tr>
+
+    <tr>
+        <td>@ViewBag.Name</td>
+        <td>@ViewBag.Country</td>
+    </tr>
+
+</table>
+
