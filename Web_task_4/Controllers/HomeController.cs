@@ -25,9 +25,8 @@ namespace Web_task_4.Controllers
             {
                 return View(db.Cars.ToList());
             }
-            var c = from m in db.Cars
-                    select m;
-            c = c.Where(s => s.Name.Contains(searchString));
+            var c = from i in db.Cars select i;
+            c = c.Where(t => t.Name.Contains(searchString));
             return View(c.ToList());
         }
 
@@ -37,22 +36,21 @@ namespace Web_task_4.Controllers
             {
                 return View(db.Brands.ToList());
             }
-            var c = from m in db.Brands
-                    select m;
-            c = c.Where(s => s.Name.Contains(searchString));
+            var c = from i in db.Brands select i;
+            c = c.Where(t => t.Name.Contains(searchString));
             return View(c.ToList());
         }
 
-
+        //add car
         [HttpGet]
         public IActionResult create()
         {
             return View();
         }
         [HttpPost]
-        public IActionResult create(string submit, string cancel, Car car)
+        public IActionResult create(string add, string cancel, Car car)
         {
-            var button = submit ?? cancel;
+            var button = add ?? cancel;
             if (button == "Cancel")
             {
                 return RedirectToAction("Index");
@@ -67,7 +65,9 @@ namespace Web_task_4.Controllers
             db.SaveChanges();
             return View(db.Cars.ToList());
         }
-
+        
+        //add model car
+        
         [HttpGet]
         public IActionResult createBrand()
         {
@@ -91,6 +91,8 @@ namespace Web_task_4.Controllers
             return RedirectToAction("IndexBrand");
         }
 
+        //show car
+        
         [HttpGet]
         public IActionResult show(int? id)
         {
@@ -98,10 +100,10 @@ namespace Web_task_4.Controllers
             var obj = db.Cars.Find(id);
             ViewBag.Name = obj.Name;
             ViewBag.Id = obj.Id;
-            ViewBag.Volume = obj.EnginePower;
-            ViewBag.Count = obj.Number;
+            ViewBag.EnginePower = obj.EnginePower;
+            ViewBag.Number = obj.Number;
             ViewBag.Price = obj.Price;
-            ViewBag.BrandName = obj.Brand;
+            ViewBag.Brand = obj.Brand;
             return View();
         }
 
@@ -116,19 +118,19 @@ namespace Web_task_4.Controllers
             return View();
         }
 
+        //edit car
+
         [HttpGet]
         public IActionResult edit(int? id)
         {
             if (id == null) return RedirectToAction("Index");
             var car = db.Cars.Find(id);
             ViewBag.Name = car.Name;
-            ViewBag.Volume = car.EnginePower;
-            ViewBag.Count = car.Number;
+            ViewBag.EnginePower = car.EnginePower;
+            ViewBag.Number = car.Number;
             ViewBag.Id = id;
             ViewBag.Price = car.Price;
-            ViewBag.BrandName = car.Brand;
-            //            db.Cars.Remove(car);
-            //            db.SaveChanges();
+            ViewBag.Brand = car.Brand;
             return View();
         }
 
@@ -153,6 +155,8 @@ namespace Web_task_4.Controllers
             db.SaveChanges();
             return RedirectToAction("Index");
         }
+
+        //edit model car
 
         [HttpGet]
         public IActionResult editBrand(int? id)
@@ -187,8 +191,10 @@ namespace Web_task_4.Controllers
             return RedirectToAction("IndexBrand");
         }
 
+        //delete car
+
         [HttpGet]
-        public IActionResult destroy(int? id)
+        public IActionResult delete(int? id)
         {
             if (id == null) return RedirectToAction("Index");
             var car = db.Cars.FirstOrDefault(x => x.Id == id);
@@ -199,30 +205,30 @@ namespace Web_task_4.Controllers
             var obj = db.Cars.Find(id);
             ViewBag.Name = obj.Name;
             ViewBag.Id = obj.Id;
-            ViewBag.Volume = obj.EnginePower;
-            ViewBag.Count = obj.Number;
+            ViewBag.EnginePower = obj.EnginePower;
+            ViewBag.Number = obj.Number;
             ViewBag.Price = obj.Price;
-            ViewBag.BrandName = obj.Brand;
+            ViewBag.Brand = obj.Brand;
             return View();
         }
-
         [HttpPost]
-        public IActionResult destroy(string submit, string cancel, Car car)
+        public IActionResult delete(string add, string cancel, Car car)
         {
-            var button = submit ?? cancel;
+            var button = add ?? cancel;
             if (button == "Cancel")
             {
                 return RedirectToAction("Index");
             }
-
             db.Cars.Remove(car);
             db.SaveChanges();
             return RedirectToAction("Index");
 
         }
 
+        //delete model
+
         [HttpGet]
-        public IActionResult destroyBrand(int? id)
+        public IActionResult deleteBrand(int? id)
         {
             if (id == null) return RedirectToAction("IndexBrand");
             var brand_ = db.Brands.FirstOrDefault(x => x.Id == id);
@@ -236,9 +242,8 @@ namespace Web_task_4.Controllers
             ViewBag.Country = obj.Country;
             return View();
         }
-
         [HttpPost]
-        public IActionResult destroyBrand(string submit, string cancel, Brand brand_)
+        public IActionResult deleteBrand(string submit, string cancel, Brand brand_)
         {
             var button = submit ?? cancel;
             if (button == "Cancel")

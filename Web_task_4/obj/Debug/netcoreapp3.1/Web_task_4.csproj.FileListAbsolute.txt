@@ -42,7 +42,6 @@ D:\Program Files(VS)\Web Programs\Web_task_4\bin\Debug\netcoreapp3.1\Npgsql.Enti
 D:\Program Files(VS)\Web Programs\Web_task_4\obj\Debug\netcoreapp3.1\Web_task_4.MvcApplicationPartsAssemblyInfo.cache
 D:\Program Files(VS)\Web Programs\Web_task_4\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.Design.dll
 D:\Program Files(VS)\Web Programs\Web_task_4\bin\Debug\netcoreapp3.1\Npgsql.EntityFrameworkCore.PostgreSQL.Design.dll
-D:\Program Files(VS)\Web Programs\Web_task_4\obj\Debug\netcoreapp3.1\Razor\Views\Home\Buy.cshtml.g.cs
 D:\Program Files(VS)\Web Programs\Web_task_4\obj\Debug\netcoreapp3.1\Razor\Views\Home\Create.cshtml.g.cs
 D:\Program Files(VS)\Web Programs\Web_task_4\obj\Debug\netcoreapp3.1\Razor\Views\Home\Delete.cshtml.g.cs
 D:\Program Files(VS)\Web Programs\Web_task_4\obj\Debug\netcoreapp3.1\Razor\Views\Home\Edit.cshtml.g.cs
@@ -52,3 +51,5 @@ D:\Program Files(VS)\Web Programs\Web_task_4\obj\Debug\netcoreapp3.1\Razor\Views
 D:\Program Files(VS)\Web Programs\Web_task_4\obj\Debug\netcoreapp3.1\Razor\Views\Home\EditBrand.cshtml.g.cs
 D:\Program Files(VS)\Web Programs\Web_task_4\obj\Debug\netcoreapp3.1\Razor\Views\Home\IndexBrand.cshtml.g.cs
 D:\Program Files(VS)\Web Programs\Web_task_4\obj\Debug\netcoreapp3.1\Razor\Views\Home\ShowBrand.cshtml.g.cs
+D:\Program Files(VS)\Web Programs\Web_task_4\obj\Debug\netcoreapp3.1\Razor\Views\Home\Buy.cshtml.g.cs
+D:\Program Files(VS)\Web Programs\Web_task_4\obj\Debug\netcoreapp3.1\Razor\Views\Home\Delete2.cshtml.g.cs
