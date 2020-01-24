@@ -1,0 +1,47 @@
+﻿@model Program_5.ViewModels.IndexViewModel
+
+@{
+    ViewData["Title"] = "Add new car";
+}
+
+@using (Html.BeginForm("AddNewCar", "Car", FormMethod.Post))
+{
+    <div>
+        <h2>Добавление нового автомобиля</h2><br>
+        <p>
+            <label for="brand">Выберите существующий бренд: </label>
+            <select name="BrandId" id="brand"  >
+                @foreach (Brand brand in Model.Brands)
+                {
+                    <option value="@brand.Id">@brand.Name</option>
+                }
+            </select>
+        </p>
+
+        <p>
+            @Html.Label("name", "Название: ")
+            @Html.TextBox("name","Tesla Model S")
+        </p>
+
+        <p>
+            @Html.Label("power", "Мошность: ")
+            @Html.TextBox("power", "", new { type = "number" })
+        </p>
+
+        <p>
+            @Html.Label("price", "Цена:")
+            @Html.TextBox("price", "", new { type = "number" })
+        </p>
+
+        <p>
+            @Html.Label("count", "Кол-во:")
+            @Html.TextBox("count", "", new { type = "number" })
+        </p>
+
+
+        <span class="col-md-offset-2 col-md-10">
+            <button type="submit" value="Submit" name="Submit">Добавить</button>
+            <button type="submit" value="Cancel" name="Cancel">Отмена</button>
+        </span>
+    </div>
+}

@@ -1,0 +1,94 @@
+﻿@model Program_5.ViewModels.IndexViewModel
+
+@{
+    ViewData["Title"] = "Main";
+}
+<style>
+    .glyphicon {
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale
+    }
+
+    .glyphicon-chevron-right:before {
+        content: "\f054";
+    }
+
+    .glyphicon-chevron-left:before {
+        content: "\f053";
+    }
+</style>
+<h2>Список автомобилей</h2>
+<form method="get">
+    <div class="form-inline">
+        <label>Название: </label>
+        <input name="name" value="@Model.FilterViewModel.SelectedName" class="form-control" />
+
+        <label>Бренд: </label>
+        <select name="brand" asp-items="Model.FilterViewModel.Brands" class="form-control"></select>
+        
+        <input type="submit" value="Filter" class="btn btn-outline-info" />
+    </div>
+</form>
+
+<table class="table">
+    <tr>
+        <th>
+            <a asp-action="Index"
+               asp-route-sortOrder="@(Model.SortViewModel.NameSort)"
+               asp-route-name="@(Model.FilterViewModel.SelectedName)"
+               asp-route-brand="@(Model.FilterViewModel.SelectedBrand)">Название</a>
+        </th>
+        <th>
+            <a asp-action="Index" asp-route-sortOrder="@(Model.SortViewModel.PriceSort)"
+               asp-route-name="@(Model.FilterViewModel.SelectedName)"
+               asp-route-brand="@(Model.FilterViewModel.SelectedBrand)">Цена</a>
+        </th>
+        <th>
+            <a asp-action="Index" asp-route-sortOrder="@(Model.SortViewModel.PowerSort)"
+               asp-route-name="@(Model.FilterViewModel.SelectedName)"
+               asp-route-brand="@(Model.FilterViewModel.SelectedBrand)">Мощность</a>
+        </th>
+        <th>
+            <a asp-action="Index" asp-route-sortOrder="@(Model.SortViewModel.BrandSort)"
+               asp-route-name="@(Model.FilterViewModel.SelectedName)"
+               asp-route-brand="@(Model.FilterViewModel.SelectedBrand)">Бренд</a>
+        </th>
+    </tr>
+    @foreach (Car p in Model.Cars)
+    {
+        <tr>
+            <td>@p.Name</td>
+            <td>@p.Price</td>
+            <td>@p.Power</td>
+            <td>@p.Brand.Name</td>
+        </tr>
+    }
+</table>
+@if (Model.PageViewModel.HasPreviousPage)
+{
+    <a asp-action="Index"
+       asp-route-page="@(Model.PageViewModel.PageNumber - 1)"
+       asp-route-name="@(Model.FilterViewModel.SelectedName)"
+       asp-route-brand="@(Model.FilterViewModel.SelectedBrand)"
+       asp-route-sortorder="@(Model.SortViewModel.Current)"
+       class="btn  btn-outline-info">
+        <i class="glyphicon glyphicon-chevron-left"></i>
+        Назад
+    </a>
+}
+@if (Model.PageViewModel.HasNextPage)
+{
+    <a asp-action="Index"
+       asp-route-page="@(Model.PageViewModel.PageNumber + 1)"
+       asp-route-name="@(Model.FilterViewModel.SelectedName)"
+       asp-route-brand="@(Model.FilterViewModel.SelectedBrand)"
+       asp-route-sortorder="@(Model.SortViewModel.Current)"
+       class="btn btn-outline-info">
+        Далее
+        <i class="glyphicon glyphicon-chevron-right"></i>
+    </a>
+}
