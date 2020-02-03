@@ -25,15 +25,9 @@ namespace Program_5
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            string connection = Configuration.GetConnectionString("Server=localhost; Port=5432; Database=CarSttrfvgbhjnkore; User Id=postgres; Password=89376650756;");
-            //services.AddDbContext<CarContext>(options => options.UseNpgsql("Server=localhost; Port=5432; Database=CarStore; User Id=postgres; Password=89376650756;"));
-            string con = "Server=(localdb)\\mssqllocaldb;Database=Old2sdf;Trusted_Connection=True;";
-            services.AddDbContext<CarContext>(options => options.UseSqlServer(con));
+            string connection = Configuration.GetConnectionString("DefaultConnection");
+            services.AddDbContext<CarContext>(options => options.UseNpgsql(connection));
             services.AddControllersWithViews();
-
-            //services.AddMvc().AddXmlDataContractSerializerFormatters();
-            // устанавливаем контекст данных
-            //services.AddControllers();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

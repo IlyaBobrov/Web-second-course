@@ -44,8 +44,6 @@ namespace Program_5.Controllers
                 return BadRequest();
             }
 
-            car.CreationDate = DateTime.Now;
-
             DataBase.Cars.Add(car);
             DataBase.SaveChanges();
             return Redirect("~/Home/Index");
