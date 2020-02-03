@@ -1,0 +1,43 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1>Добро пожаловать!</h1>
+</div>
+<div>
+    <br>
+    <h2>Вы вошли как: <i class="text-success">@User.Identity.Name </i></h2>
+    <br>
+    <br>
+    <p class="text-center alert alert-warning">Ведутся технические работы</p>
+    <p>Ваш статус в системе:<i class="text-danger"> Не опознан</i></p>
+    <p>Вам доступна таблица aвтомобилей для просмотра</p>
+    <p>Редактирование таблицы доступно только Модераторам сайта</p>
+    <p>О том как стать моератором сайта узнавайте у Администраторов сайта</p>
+
+    @{ if (@User.Identity.AuthenticationType == "user")
+        {
+            <p>Вам доступна таблица aвтомобилей для просмотра</p>
+        }
+        else
+        {
+            if (@User.Identity.AuthenticationType == "moder")
+            {
+                <p>
+                    Вам доступна таблица для просмотра и редатирования.<br>
+                    Добавление и удаление полей ограничено
+                </p>
+            }
+            else
+            {
+                if (@User.Identity.AuthenticationType == "admin")
+                {
+                    <p>Вам доступны все функции</p>
+                }
+            }
+        }
+
+
+    }
+</div>

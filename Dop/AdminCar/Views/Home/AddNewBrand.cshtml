@@ -1,0 +1,31 @@
+﻿@{
+    ViewData["Title"] = "New car brand";
+}
+
+@using (Html.BeginForm("AddNewBrand", "Home", FormMethod.Post))
+{
+    <div>
+        <h2>Добавление нового бренда</h2><br>
+        <p>
+            @Html.Label("name", "Название: ")
+            @Html.TextBox("name", "BMW")
+        </p>
+
+        <p>
+            @Html.Label("country", "Страна: ")
+            @Html.TextBox("country", "Germany")
+        </p>
+        <p>
+            @Html.Label("year", "Год основания: ")
+            @Html.TextBox("year", "1940")
+        </p>
+        <p>
+            @Html.Label("site", "Сайт бренда: ")
+            @Html.TextBox("site", "http://...")
+        </p>
+        <span class="col-md-offset-2 col-md-10">
+            <button type="submit" value="Submit" class="btn btn-outline-dark" name="Submit">Добавить</button>
+            <button type="submit" value="Cancel" class="btn btn-outline-dark" name="Cancel">Назад</button>
+        </span>
+    </div>
+}

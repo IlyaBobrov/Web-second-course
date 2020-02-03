@@ -1,0 +1,38 @@
+﻿@model AdminCar.ViewModels.IndexViewModel
+@{
+    ViewData["Title"] = "Home";
+}
+
+<h2>Домашняя страница</h2>
+<br>
+
+@using (Html.BeginForm("Index", "Home", FormMethod.Post))
+{
+    <label>Искать по бренду: </label>
+    <select name="brandId" class="form-control form-control-sm">
+        @foreach (Brand brand in ViewBag.Brands)
+        {
+            <option value="@brand.Id">@brand.Name</option>
+        }
+    </select>
+    <input type="submit" class="btn btn-outline-info" />
+}
+
+<table class="table">
+    <tr>
+        <td>Название</td>
+        <td>Бренд</td>
+        <td>Мощность(кВт)</td>
+        <td>Цена</td>
+    </tr>
+
+    @foreach (Car p in Model.Cars)
+    {
+        <tr>
+            <td>@p.Name</td>
+            
+            <td>@p.Power</td>
+            <td>@p.Price</td>
+        </tr>
+    }
+</table>
